@@ -27,7 +27,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: af-south-1
+          aws-region: us-east-1
         env:
           # This forces the underlying AWS SDK to use regional STS endpoints
           AWS_STS_REGIONAL_ENDPOINTS: regional
