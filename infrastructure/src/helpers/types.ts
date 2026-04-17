@@ -4,6 +4,7 @@ export const MAX_ATTACHMENT_BYTES = 10 * 1024 * 1024;
 export const ALLOWED_ORIGINS = [
   "https://zeropointgeo.co.za",
   "https://www.zeropointgeo.co.za",
+  "http://localhost:8080",
 ];
 
 export interface ContactPayload {
