@@ -21,9 +21,9 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
 
     const client = await getGraphClient();
     const message = buildEmailPayload(body);
-    await sendMail(client, message);
+    // await sendMail(client, message);
 
-    return respond(200, { message: "Enquiry sent successfully" }, origin);
+    return respond(200, { message: `${JSON.stringify(message)}, ${JSON.stringify(client)}` }, origin);
   } catch (err) {
     console.error("Contact form error:", err);
     return respond(500, { error: err instanceof Error ? err.message : "Unknown error" }, origin);
