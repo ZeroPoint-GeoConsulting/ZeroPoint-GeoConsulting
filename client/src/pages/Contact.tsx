@@ -4,7 +4,9 @@ import { Mail, Phone, MapPin, Upload, Send, Loader2, CheckCircle, X } from "luci
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const API_URL = import.meta.env.VITE_CONTACT_API_URL;
+// const API_URL = import.meta.env.VITE_CONTACT_API_URL;
+
+ const API_URL = "https://leg0kc7odl.execute-api.us-east-1.amazonaws.com/api/contact-form";
 
 const projectTypes = [
   "Engineering & Construction Surveying",

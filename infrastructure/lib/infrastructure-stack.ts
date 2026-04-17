@@ -79,6 +79,11 @@ export class InfrastructureStack extends cdk.Stack {
       apiName: 'ZeroPointContactAPI',
       description: 'ZeroPoint Contact API',
       createDefaultStage: true,
+      corsPreflight: {
+        allowOrigins: ['https://zeropointgeo.co.za', 'https://www.zeropointgeo.co.za', "http://localhost:8080"],
+        allowMethods: [apigatewayv2.CorsHttpMethod.POST, apigatewayv2.CorsHttpMethod.OPTIONS],
+        allowHeaders: ['Content-Type'],
+      },
     });
 
     api.addRoutes({
