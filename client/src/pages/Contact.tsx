@@ -134,7 +134,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wider">Phone</p>
-                      <p className="text-sm text-foreground group-hover:text-gold transition-colors">+27 27 231 6960</p>
+                      <p className="text-sm text-foreground group-hover:text-gold transition-colors">+27 72 231 6960</p>
                     </div>
                   </a>
                   <div className="flex items-start gap-3">
